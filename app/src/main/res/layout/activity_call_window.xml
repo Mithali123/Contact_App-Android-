@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/call_background"
+    android:padding="16dp">
+
+    <!-- Contact's Profile Image -->
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/calling_logo"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_background"
+        android:elevation="8dp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/call_background"
+        android:contentDescription="Contact's Image" />
+
+    <!-- Contact's Name -->
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_image"
+        android:layout_centerHorizontal="true"
+        android:text="John Doe"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3" />
+
+    <!-- Phone Number Text -->
+    <TextView
+        android:id="@+id/contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_name"
+        android:layout_centerHorizontal="true"
+        android:text="+1 (555) 123-4567"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Call Status -->
+    <TextView
+        android:id="@+id/call_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_number"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="40dp" />
+
+    <!-- End Call Button at the Bottom Center -->
+
+
+    <!-- Button Section at Bottom -->
+    <LinearLayout
+        android:id="@+id/button_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray">
+
+        <!-- Horizontal Row of Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/keypad_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_keyboard_alt_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Keypad" />
+
+            <ImageButton
+                android:id="@+id/mute_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_volume_off_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Mute" />
+
+            <ImageButton
+                android:id="@+id/speaker_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_speaker_phone_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Speaker" />
+
+            <ImageButton
+                android:id="@+id/more_button"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_more_vert_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="More Options" />
+        </LinearLayout>
+
+        <!-- Large End Call Button -->
+        <ImageButton
+            android:id="@+id/end_call_button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:src="@drawable/call_end"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="End Call" />
+    </LinearLayout>
+</RelativeLayout>

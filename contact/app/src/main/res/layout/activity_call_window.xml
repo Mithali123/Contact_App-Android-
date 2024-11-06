@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/call_background"
+    android:padding="16dp">
+
+    <!-- Contact's Profile Image -->
+    <ImageView
+        android:id="@+id/contact_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/calling_logo"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_background"
+        android:elevation="8dp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/call_background"
+        android:contentDescription="Contact's Image" />
+
+    <!-- Contact's Name -->
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_image"
+        android:layout_centerHorizontal="true"
+        android:text="John Doe"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3" />
+
+    <!-- Phone Number Text -->
+    <TextView
+        android:id="@+id/contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_name"
+        android:layout_centerHorizontal="true"
+        android:text="+1 (555) 123-4567"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Call Status -->
+    <TextView
+        android:id="@+id/call_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_number"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Circular End Call Button with Shadow -->
+    <ImageButton
+        android:id="@+id/end_call_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/call_end"
+        android:backgroundTint="@color/call_background"
+        android:background="@drawable/rounded_button_background"
+        android:contentDescription="End Call"
+
+        android:elevation="10dp" />
+
+    <!-- Circular Call Button with Shadow (Optional) -->
+
+
+</RelativeLayout>

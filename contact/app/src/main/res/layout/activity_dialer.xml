@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/search_contacts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/search_contacts"
+                android:drawableStart="@drawable/baseline_search_24"
+                android:textColor="@color/black"
+                android:background="@color/grey_light"
+                android:padding="8dp"
+
+                android:layout_margin="8dp"/>
+
+            <ImageButton
+                android:id="@+id/add_contact_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_add_24"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                app:tint="@color/black"
+                android:padding="8dp"/>
+
+            <ImageButton
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_settings_24"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                app:tint="@color/black"
+                android:padding="8dp"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/search_toolbar"
+        android:layout_marginTop="16dp"
+
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/grey_light"
+
+            android:hint="Enter Number"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="50sp"/>
+
+        <ImageButton
+            android:id="@+id/clear_button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="60dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/back_button"
+            app:tint="@color/black" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/dialpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/input_layout"
+        android:padding="16dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonStar"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonHash"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/oval_button_background"
+            android:text="#"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </GridLayout>
+
+    <ImageButton
+        android:id="@+id/call_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/dialpad"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_call_24"
+        app:tint="@color/white"
+        android:background="@drawable/oval_button_backgroundcall"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/contacts_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/contacts"
+            android:textColor="@color/white"
+            android:background="@color/defaultColor"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/baseline_face_24"
+            android:onClick="toMainPage"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/recents_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/recents"
+            android:textColor="@color/white"
+            android:background="@color/defaultColor"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/baseline_access_time_24"
+            android:layout_marginLeft="10dp"
+            android:onClick="toRecentsPage"/>
+    </LinearLayout>
+
+</RelativeLayout>

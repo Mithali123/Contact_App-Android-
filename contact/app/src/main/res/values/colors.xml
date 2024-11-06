@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#F5F5F5</color>
+    <color name="primaryColor">#005FA8</color>
+    <color name="defaultColor">#ff6750a4</color>
+    <color name="errorColor">#D32F2F</color>
+    <color name="amber">#FFC107</color>
+    <color name="darkGray">#616161</color>
+    <color name="grey_background">#F5F5F5</color> <!-- Light grey background -->
+    <color name="grey_light">#D3D3D3</color>
+    <color name="my_custom_button_background">#000000</color> <!-- Black background -->
+    <color name="my_custom_button_text">#FFFFFF</color> <!-- White text -->
+    <color name="gradient_start">#2E2E2E</color> <!-- Dark Gray -->
+    <color name="gradient_end">#1E1E1E</color>  <!-- Slightly Darker Gray -->
+    <color name="call_background">#1E1E1E</color> <!-- Dark Background -->
+    <color name="text_primary">#FFFFFF</color> <!-- White for text -->
+    <color name="text_secondary">#D3D3D3</color> <!-- Light Gray for secondary text (status) -->
+    <color name="call_button_color">#4CAF50</color> <!-- Green for Call Button -->
+    <color name="end_call_button_color">#F44336</color> <!-- Red for End Call Button -->
+    <color name="divider_color">#BDBDBD</color> <!-- Light Gray for dividers -->
+    <color name="accent_color">#FFC107</color>
+</resources>
